@@ -1,39 +1,381 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <style>
-            #lienzo {
-                background-color: red;
-
-
-            }
-
-            section {
-                width: 500px;
-                position: relative;
-                margin: auto;
-
-            }
-
-        </style>
-
-        <script>
-            function comenzar(){
-                var elemento=document.getElementById("lienzo");
-                lienzo=elemento.getContext("2d");
-                lienzo.fillRect(110,110,100,100); /*Rectangulo: posX, posY, ancho, alto*/
-            }
-
-            window.addEventListener("load",comenzar,false);
-        </script>
+        <!-- metadatos -->
+        <meta charset="utf-8">
+        <meta name="author" content="Leandro Alfaro">
+        <meta name="description" content="Portafolio de Leandro Alfaro">
+        <meta name="keywords" content="HTML, CSS, JavaScript, git, java, C, C++, Linux, Design, Analyst, Networking">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- titulo -->
+        <title>Leandro Alfaro | Desarrollador</title> 
+        <!-- favicon -->
+        <link href="img/logo3.png" rel="icon" type="image/x-icon">
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        
+          <!-- bootstrap iconos -->
+		    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        
+        <!-- CSS -->
+        <link href="style.css" rel="stylesheet">
+        
+        <!-- fuentes -->
+            <!-- Rubik Vinyl -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
-        <section id="dibujo">
-            <canvas id="lienzo" width="500px" height="300px">
-                Su navegador no soporta el elemento html5 canvas.
-            </canvas>
+        <!-- Barra navegacion -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="">
+                    <img src="img/logo2.png" width="50" alt="Logo pagina web">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">  <!-- mb=margin-bottom. mx= margin -->
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#proyectos">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+
+        <!-- Seccion hero -->
+
+        <section class="hero align-items-stretch">
+            <div class="hero-principal d-flex flex-column justify-content-center align-items-center seccion-clara">
+                <img class="hero-imagen-desarrollador rounded-circle" src="img/LeandroAlfaro.jpeg" alt="Foto de Leandro Alfaro">
+                <h1> Hola, soy Leandro Alfaro </h1>
+                <h2> Desarrollador de software </h2>
+            </div>
+            <div class="hero-inferior seccion-clara">
+                <img class="img-fluid" src="img/t_c.png" alt="c">
+                <img class="img-fluid" src="img/t_cpp.png" alt="cpp c++">
+                <img class="img-fluid" src="img/t_spring.png" alt="spring springboot">
+                <img class="img-fluid" src="img/t_java.png" alt="Java">
+                <img class="img-fluid" src="img/t_sql.png" alt="microsoft sql server">
+                <img class="img-fluid" src="img/t_git.png" alt="git github">
+                <img class="img-fluid" src="img/t_linux.png" alt="linux ubuntu">
+                <img class="img-fluid" src="img/t_android.png" alt="android studio">
+                <img class="img-fluid" src="img/t_html.png" alt="html 5 html5">
+                <img class="img-fluid" src="img/t_css.png" alt="css css3">
+                <img class="img-fluid" src="img/t_javascript.png" alt="javascript">
+                <img class="img-fluid" src="img/t_bootstrap.png" alt="bootstrap">
+            </div>
         </section>
+
+        <!-- Sobre mi -->
+        <section id="sobre-mi" class="sobre-mi seccion-oscura">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Sobre mí</h2>
+                <!-- lipsum.com -->
+                <p class="seccion-texto">¡Hola! ¿como están? ¡yo de maravilla! estoy actualmente terminando mi grado en ingeniería en informatica además de otros proyectos en los que estoy trabajando. Me considero un apasionado por la tecnología en general pero disfruto mucho de programar, aprender y de por sobre todo de resolver problemas. </p>
+                <p class="seccion-texto">Me considero una persona seria, organizada y que sobre todo tiene la habilidad de adquirir conocimiento en poco tiempo. Soy Artista marcial, práctico kick-boxing y soy primer dan de Taekwondo, además de que me encanta hacer musculación. Soy una persona que le encanta trabajar, compartir y vivir experiencias con otros.</p>
+                <p class="seccion-texto">Estoy interesado en participar de proyectos donde pueda desempeñar mis habilidades con gente positiva y con la que poder mejorar y aprender.</p>
+            </div>
+
+        </section>
+
+        <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+            <!-- proyectos -->
+            <span class="seccion-titulo texto-oscuro">Mis proyectos recientes</span>
+            <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
+            <!-- Galeria de proyectos -->
+            <div class="container text-center proyectos-contenedor">
+                <div class="row">
+                    <!-- PROYECTO 1 -->
+                    <div class="col-12 col-md-4 col-lg-3">
+                            <div class="proyecto">
+                                <img src="img/fulvo.jpeg" alt="Proyecto 1">
+                                <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                                <p>Vuelta al fulvo</p>
+                                <!-- contenedor de los iconos -->
+                                <div class="iconos-contenedor"> 
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="proyecto">
+                            <img src="img/vans_and_lodging.png" alt="vans & lodging">
+                            <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                            <p>Vans & Lodging</p>
+                            <!-- contenedor de los iconos -->
+                            <div class="iconos-contenedor"> 
+                                <a href="https://github.com/AlfaroLeandro/Vans-Lodging.git" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+                    <!-- PROYECTO 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="proyecto">
+                            <img src="img/shell.png" alt="Proyecto 1">
+                            <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                            <p>shell powershell C linux</p>
+                            <!-- contenedor de los iconos -->
+                            <div class="iconos-contenedor"> 
+                                <a href="https://github.com/AlfaroLeandro/Shell-scripting" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+                    <!-- PROYECTO 4 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="proyecto">
+                            <img src="img/logo2.png" alt="Proyecto 1">
+                            <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                            <p>¡Este portfolio! :)</p>
+                            <!-- contenedor de los iconos -->
+                            <div class="iconos-contenedor"> 
+                                <a href="https://github.com/AlfaroLeandro/AlfaroLeandro.github.io" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                </a>
+                                <a href="AlfaroLeandro.github.io/index.html" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+                                        <!-- PROYECTO 5 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="proyecto">
+                            <img src="img/gear.png" alt="Lenguajes y Compiladores">
+                            <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                            <p>Compilador</p>
+                            <!-- contenedor de los iconos -->
+                            <div class="iconos-contenedor"> 
+                                <a href="https://github.com/AlfaroLeandro/Compilador.git" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+                    <!-- PROYECTO 6 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="proyecto">
+                            <img src="img/TimbaLoca.png" alt="Arduino Thinkercad Craps">
+                            <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                            <p>Craps Arduino</p>
+                            <!-- contenedor de los iconos -->
+                            <div class="iconos-contenedor"> 
+                                <a href="https://github.com/AlfaroLeandro/Timba-loca.git" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                </a>
+
+                                <a href="https://www.tinkercad.com/things/1e133SBMaog-timba-loca" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+                    <!-- PROYECTO  7 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="proyecto">
+                            <img src="img/hpc.png" alt="HPC Computacion de altas prestaciones Colab Python">
+                            <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                            <p>HPC</p>
+                            <!-- contenedor de los iconos -->
+                            <div class="iconos-contenedor"> 
+                                <a href="https://github.com/AlfaroLeandro/computacion-altas-prestaciones.git" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                
+                    <!-- PROYECTO  8 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="proyecto">
+                            <img src="img/packetTracer.jpg" alt="Packet Tracer ipv4 ipv6 rip rip-ng eigrp ospf">
+                            <div class="overlay"> <!--  permite agregar informacion adicional por encima de una imagen -->
+                            <p>Packet Tracer</p>
+                            <!-- contenedor de los iconos -->
+                            <div class="iconos-contenedor"> 
+                                <a href="https://github.com/AlfaroLeandro/Compilador.git" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                </a>
+
+                                <a href="https://www.tinkercad.com/things/1e133SBMaog-timba-loca" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- separador -->
+        <!-- <section id="separador"></section> -->
+
+        <!-- Mis estudios -->
+        <section id="mis-estudios" class="experiencia seccion-oscura">
+
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Mis estudios</h2>
+            </div>
+
+            <div class="container text-center" style="padding: 30px 0px">
+                <div class="row">  
+                            
+                    <!-- Tecnicatura -->
+                    <div class="columna col-12 col-lg-4">
+                      <img class="align-items-center img-fluid rounded-circle experiencia-imagen" src="img/unlam.png" alt="Unlam universidad nacional de la matanza">
+                      <p class="experiencia-titulo"> Tecnicatura universitaria en desarrollo de software </p>
+                      <p> El ciclo básico del grado de ingeniería en informatica me dio la posibilidad de tener una base sólida en matemática, lógica, análisis de problemas y me dio los fundamentos de los sistemas discretos, y de las tecnologías de comunicación. </p>
+                        <p>Promedio: 8.038</p>
+                      <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">análisis de sistemas </span>
+                        <span class="badge text-bg-primary">implementación</span>
+                        <span class="badge text-bg-primary">testing</span>
+                        <span class="badge text-bg-primary">Analisis Matemático</span>
+                        <span class="badge text-bg-primary">Estadistica</span>
+                        <span class="badge text-bg-primary">Programacion</span>
+                      </div>
+                    </div>      
+                    
+                    <!-- Ing en informatica -->
+                    <div class="columna col-12 col-md-6 col-lg-4">
+                        <img class="align-items-center img-fluid rounded-circle experiencia-imagen" src="img/unlam.png" alt="Unlam universidad nacional de la matanza">
+                        <p class="experiencia-titulo"> Ingeniería en informatica </p>
+                        <p> La carrera me dio la posibilidad de tener una vision balanceada entre la teoría y la práctica. 
+                          Adicionalmente tambien obtuve mucho conocimiento y la posibilidad de poner en práctica mis habilidades blandas, trabajo en equipo, liderazgo, comunicación, entre otros.</p>
+                        <p>Promedio actual: 8.077</p>
+                        <div class="badges-contenedor">
+                          <span class="badge text-bg-primary">ingeniería de software </span>
+                          <span class="badge text-bg-primary">análisis de sistemas </span>
+                          <span class="badge text-bg-primary">diseño</span>
+                          <span class="badge text-bg-primary">implementación</span>
+                          <span class="badge text-bg-primary">testing</span>
+                          <span class="badge text-bg-primary">networking</span>
+                        </div>
+                      </div>
+                    
+                    <!-- Ingles -->
+                    <div class="columna col-12 col-md-6 col-lg-4">
+                      <img id="img-ingles" class="hero-inferior-imagen img-fluid experiencia-imagen" src="img/libros.jpg" alt="Ingles">
+                      <p class="experiencia-titulo"> Inglés </p>
+                      <p> Durante 7 años cursé en un instituto especializado en lengua inglesa, finalicé mis estudios en el año 2017</p>
+                      <br> <br> <br> <br> <br> <br> <br>
+
+                      <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">escritura</span>
+                        <span class="badge text-bg-primary">lectura</span>
+                        <span class="badge text-bg-primary">convesación fluida</span>
+                      </div>
+                    </div>      
+                    
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contacto" class="seccion-negra" style="padding-top: 2rem">
+
+            <h2> Contacto </h2>
+            <h4> Contáctame para cualquier tipo de proyecto, tanto de corto como a largo plazo. O cualquier pregunta que quieras hacerme no dudes en enviarmela. </h4>
+            
+            <div class="row container contacto">
+                    
+                <div class="row">
+                    <div class="container">
+                        <form id="contact" action="https://formspree.io/f/xgeberjg" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                            <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Tu nombre..." required="" />
+                            </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                            <fieldset>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="Tu email..." required="" />
+                            </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                            <fieldset>
+                                <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto..." required="" />
+                            </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                            <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tu mensaje..." required=""></textarea>
+                            </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="button btn btn-primary">
+                                Enviar mensaje
+                                </button>
+                            </fieldset>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                    <div class="contacto-iconos col-4">
+                        <a href="https://github.com/AlfaroLeandro" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                    <div class="contacto-iconos col-4">
+                        <a href="https://www.linkedin.com/in/leandro-alfaro-547864233/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div class="contacto-iconos col-4">
+                        <a href="leandro.ezequiel.alfaro.01@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        
+                    </div>
+                            
+            </div>
+            <small style="color:grey; padding-right: -2rem"> Leandro Alfaro 2023 </small>
+
+        </section>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
+
 </html>

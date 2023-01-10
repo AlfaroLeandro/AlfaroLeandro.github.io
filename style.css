@@ -1,0 +1,342 @@
+/* barra de navegacion */
+
+.navbar {
+	padding: 1rem;
+	background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+	align-items: center;
+	justify-content: space-between; /*separa el logo del <ul> (no el contenido del ul, sino el bloque) en index.html*/
+}
+
+/* Estilos generales */
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-family: 'Rubik Vinyl', cursive;
+    color: orange;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-family: cursive;
+    color: white;
+}
+
+h4 {
+	font-size: 1rem;
+	color: #5f5f76;
+}
+
+.seccion-oscura {
+	background-color: #1b1b32;
+	color:white;
+
+}
+
+.seccion-clara {
+	background-color: white;
+	color:black;
+}
+
+.seccion-titulo	{
+	font-size: 2rem;
+	padding: 15px 0;
+	font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-texto {
+	font-size: 1.2rem;
+
+}
+
+.seccion-descripcion {
+	font-size: 1.2rem;
+	color: #584e4e;
+}
+
+.btn-info {
+	font-size: 1.1rem;
+	margin: 20px;
+	/* font-weight: bold; */
+}
+
+.texto-negro {
+	color:black;
+}
+
+.texto-blanco {
+	color: white;
+}
+
+.seccion-negra {
+    background: black;
+}
+
+
+
+/* Seccion Hero */
+
+.hero {
+	background-color: #f5f6f7;
+	min-height: 450px;
+	text-align: center;
+	margin: 10px;
+	/* justify-content: center; */
+	/* align-items: center; */
+}
+
+.hero-principal {
+	padding: 3rem;
+}
+
+.hero-principal h2 {
+	font-size: 1.5rem;
+	color: #615151;
+	
+}
+
+.hero-imagen-desarrollador {
+	width: 200px;
+	height: 200px;
+	/* border-radius: 50%; */
+	margin: 20px;
+    border: 4px solid #000;
+
+}
+
+.hero-inferior img {
+	max-width: 165px;
+	padding: 0.75rem 0.75rem;
+	transition: all 0.2s ease;
+}
+
+.hero-inferior img:hover {
+	transform: scale(1.2);
+}
+
+/* sobre mi */
+
+.sobre-mi {
+	/* min-width: 400px; */
+	/* height: 500px; */
+	padding: 10px;
+}
+
+.sobre-mi .contenedor { /*con este selector se agarra a los objetos .contenedor contenidos dentro de un objeto .sobre-mi */
+	max-width: 600px;
+	text-align: center;
+}
+
+
+/* Proyectos */
+
+.proyectos-recientes {
+	padding: 40px;
+    /* background: linear-gradient(0deg,  #FFF  0%, #1b1b32 100%); */
+}
+
+.proyectos-recientes img {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	display: block;
+	transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+	padding-top: 60px;
+	margin-bottom: 40px;
+    align-items: center;
+    max-width: 850px;
+}
+
+.overlay {
+	transition: all 0.2s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.overlay p {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.proyecto {
+	position: relative;
+    max-width: 300px;
+}
+
+.proyecto:hover img {
+	opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+	opacity: 1;
+}
+
+.iconos-contenedor {
+	display: flex; 
+	
+	/* crea un flexbox, equivalente a la clase d-flex*/
+}
+
+.overlay i {
+	color: black;
+	font-size: 50px;
+	margin: 30px;
+}
+
+/* separador */
+
+#separador {
+    padding: 0.1rem;
+    background: black;
+	/* background: linear-gradient(0deg, rgba(230, 100, 77, 0.936) 0%, rgb(19, 171, 231) 100%); */
+	
+}
+
+/* Experiencia */
+
+.experiencia {
+	font-size: 1.2rem;
+	/* padding: 40px 40px 60px 40px; */
+	padding-top: 30px;
+
+    /* background: linear-gradient(0deg, #1b1b32  0%, #FFF 100%); */
+}
+
+/* .experiencia .row div {
+	height: 300px;
+	padding: 3px;
+	background-color: purple;
+	border: 3px solid orange;
+} */
+
+.experiencia-titulo {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.experiencia i {
+	font-size: 2.5rem;
+	color: #7ade30;
+	background-color: #0a0a23;
+	padding: 8px 19px;
+	border-radius: 50%;
+
+}
+
+.experiencia .columna {
+	padding: 20px;;
+	border: 2px solid #8080804d; /* el 4d es de transparencia*/
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: space-between; */
+	transition: all 0.2s ease-in;
+    background: #853737de;
+}
+
+.experiencia-imagen {
+	width: 20rem;
+	height: 20rem;
+	border-radius: 1px;
+	border: 2px solid black;
+}
+
+.experiencia .columna:hover {
+	color: black;
+	background-color: white;
+
+}
+
+.badges-contenedor {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.badge {
+	margin: 5px;
+}
+
+/* Contacto */
+
+.contacto {
+	padding-top: 1rem;
+}
+
+
+.contacto .contacto-iconos {
+	padding: 3.5rem 1.5rem 1.5rem 0rem;
+	font-size: 27px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#contact input {
+    background-color: rgba(250,250,250,0.1);
+    border: 1px solid rgba(250,250,250,1);
+    border-radius: 0px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+#contact input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#contact textarea {
+    background-color: rgba(250,250,250,0.1);
+    border: 1px solid rgba(250,250,250,1);
+    border-radius: 0px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 14px;
+    height: 180px;
+    max-height: 220px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+#contact textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#contact {
+    text-align: center;
+}
+
+
+/* Adaptable (responsivo) */
+
+/*media query: para determinada dimension aplicar tal estilo*/
+@media screen and (max-width: 767px) {
+	.navbar-brand {
+		display: none;
+	}
+}
+
