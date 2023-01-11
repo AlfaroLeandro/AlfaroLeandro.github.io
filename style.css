@@ -128,7 +128,8 @@ h4 {
 .sobre-mi {
 	/* min-width: 400px; */
 	/* height: 500px; */
-	padding: 10px;
+	padding-top: 3rem;
+	padding-bottom: 3.5rem;
 }
 
 .sobre-mi .contenedor { /*con este selector se agarra a los objetos .contenedor contenidos dentro de un objeto .sobre-mi */
