@@ -287,50 +287,51 @@ h4 {
 	padding: 3.5rem 1.5rem 1.5rem 0rem;
 	font-size: 27px;
 	text-align: center;
-	margin-bottom: 50px;
-}
-
-#contact input {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
-    border-radius: 0px;
-    margin-bottom: 30px;
-    color: #fff;
-    font-size: 14px;
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-    padding-left: 15px;
-}
-
-#contact input:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-#contact textarea {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
-    border-radius: 0px;
-    margin-bottom: 30px;
-    color: #fff;
-    font-size: 14px;
-    height: 180px;
-    max-height: 220px;
-    line-height: 40px;
-    width: 100%;
-    padding-left: 15px;
-}
-
-#contact textarea:focus {
-    outline: none;
-    box-shadow: none;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 }
 
 #contact {
     text-align: center;
+	margin-top: 2rem;
 }
 
+#contact input {
+    border: 1px solid #fff;
+	background-color: #ffffff01;
+    margin-bottom: 3rem;
+    color: #fff;
+    border-radius: 0px;
+	font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+#contact textarea {
+    background-color: #ffffff01;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    margin-bottom: 4rem;
+    color: #fff;
+    font-size: 14px;
+    height: 9rem;
+    max-height: 220px;
+    line-height: 40px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+#contact input:focus {
+    box-shadow: none;
+	outline: none;
+}
+
+#contact textarea:focus {
+    box-shadow: none;
+	outline: none;
+}
 
 /* Adaptable (responsivo) */
 
