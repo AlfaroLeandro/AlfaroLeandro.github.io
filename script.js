@@ -9,7 +9,14 @@ function init() {
         alert("'leandro.ezequiel.alfaro.01@gmail.com' copiado al portapapeles");
     });
 
+    cargar_tooltips();
+
     // icono.addEventListener("over", function() {
         
     // });
+}
+
+function cargar_tooltips() {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 }
