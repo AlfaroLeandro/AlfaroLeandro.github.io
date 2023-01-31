@@ -8,7 +8,7 @@
         <meta name="keywords" content="HTML, CSS, JavaScript, git, java, C, C++, Linux, Design, Analyst, Networking">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- titulo -->
-        <title>Leandro Alfaro | Desarrollador</title> 
+        <title id="titulo-pagina">Leandro Alfaro | Desarrollador</title> 
         <!-- favicon -->
         <link href="img/logo3.png" rel="icon" type="image/x-icon">
         <!-- bootstrap -->
@@ -41,17 +41,24 @@
                     <img src="img/logo2.png" width="50" alt="Logo pagina web">
                 </a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">  <!-- mb=margin-bottom. mx= margin -->
+                  <li id="selector-idioma-li">
+                    <select id="selector-idioma" class="form-select" aria-label="Default select example">
+                        <option selected value="es">Español</option>
+                        <option value="en">English</option>
+                      </select>
+                  </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                    <a id="nav-bar-Sobre-mi" class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#proyectos">Proyectos</a>
+                    <a id="nav-bar-Proyectos" class="nav-link" aria-current="page" href="#proyectos">Proyectos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#mis-estudios">Estudios</a>
+                    <a id="nav-bar-Estudios" class="nav-link" aria-current="page" href="#mis-estudios">Estudios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a id="nav-bar-Contacto" class="nav-link" href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -64,8 +71,8 @@
         <section class="hero align-items-stretch">
             <div class="hero-principal d-flex flex-column justify-content-center align-items-center seccion-clara">
                 <img class="hero-imagen-desarrollador rounded-circle" src="img/LeandroAlfaro.jpeg" alt="Foto de Leandro Alfaro">
-                <h1> Hola, soy Leandro Alfaro </h1>
-                <h2> Desarrollador de software </h2>
+                <h1 id="hero-titulo"> Hola, soy Leandro Alfaro </h1>
+                <h2 id="hero-subtitulo"> Desarrollador de software </h2>
             </div>
             <div class="hero-inferior seccion-clara">
                 <img class="img-fluid" src="img/t_c.png" alt="c" data-bs-toggle="tooltip" data-bs-title="C">
@@ -92,22 +99,22 @@
         <!-- Sobre mi -->
         <section id="sobre-mi" class="sobre-mi seccion-oscura">
             <div class="contenedor">
-                <h2 class="seccion-titulo">Sobre mí</h2>
+                <h2 id="titulo-seccion-sobre-mi" class="seccion-titulo">Sobre mí</h2>
                 <!-- lipsum.com -->
                 <br>
-                <p class="seccion-texto" style="font-size:21px;">¡Hola! ¿como están? ¡yo de maravilla! estoy actualmente terminando mi grado en ingeniería en informatica además de otros proyectos en los que estoy trabajando. Me considero un apasionado por la tecnología en general pero disfruto mucho de programar, aprender y de por sobre todo de resolver problemas. </p>
+                <p id="seccion-sobre-mi-p1" class="seccion-texto" style="font-size:21px;">¡Hola! ¿como están? ¡yo de maravilla! estoy actualmente terminando mi grado en ingeniería en informatica además de otros proyectos en los que estoy trabajando. Me considero un apasionado por la tecnología en general pero disfruto mucho de programar, aprender y de por sobre todo de resolver problemas. </p>
                 <br>
-                <p class="seccion-texto" style="font-size:21px;">Me considero una persona seria, organizada y que sobre todo tiene la habilidad de adquirir conocimiento en poco tiempo. Soy Artista marcial, práctico kick-boxing y soy primer dan de Taekwondo, además de que me encanta hacer musculación. Soy una persona que le encanta trabajar, compartir y vivir experiencias con otros.</p>
+                <p id="seccion-sobre-mi-p2" class="seccion-texto" style="font-size:21px;">Me considero una persona seria, organizada y que sobre todo tiene la habilidad de adquirir conocimiento en poco tiempo. Soy Artista marcial, práctico kick-boxing y soy primer dan de Taekwondo, además de que me encanta hacer musculación. Soy una persona que le encanta trabajar, compartir y vivir experiencias con otros.</p>
                 <br>
-                <p class="seccion-texto" style="font-size:21px;">Estoy interesado en participar de proyectos donde pueda desempeñar mis habilidades con gente positiva y con la que poder mejorar y aprender.</p>
+                <p id="seccion-sobre-mi-p3" class="seccion-texto" style="font-size:21px;">Estoy interesado en participar de proyectos donde pueda desempeñar mis habilidades con gente positiva y con la que poder mejorar y aprender.</p>
             </div>
 
         </section>
 
         <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
             <!-- proyectos -->
-            <span class="seccion-titulo texto-oscuro" style="font-weight: bold;">Mis proyectos recientes</span>
-            <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
+            <span id="seccion-proyectos-titulo" class="seccion-titulo texto-oscuro" style="font-weight: bold;">Mis proyectos recientes</span>
+            <h3 id="seccion-proyectos-subtitulo" class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
             <!-- Galeria de proyectos -->
             <div class="container text-center proyectos-contenedor">
                 <div class="row">
@@ -254,7 +261,7 @@
         <section id="mis-estudios" class="experiencia seccion-oscura">
 
             <div class="contenedor">
-                <h2 class="seccion-titulo">Mis estudios</h2>
+                <h2 id="seccion-estudios-titulo" class="seccion-titulo">Mis estudios</h2>
             </div>
 
             <div class="container text-center" style="padding: 30px 0px">
@@ -263,31 +270,29 @@
                     <!-- Tecnicatura -->
                     <div class="columna col-12 col-md-6">
                       <img class="align-items-center img-fluid rounded-circle experiencia-imagen" src="img/unlam.png" alt="Unlam universidad nacional de la matanza">
-                      <p class="experiencia-titulo"> Tecnicatura universitaria en desarrollo de software </p>
-                      <p> El ciclo básico del grado de ingeniería en informatica me dio la posibilidad de tener una base sólida en matemática, lógica, análisis de problemas y me dio los fundamentos de los sistemas discretos, y de las tecnologías de comunicación. </p>
-                        <p>Promedio: 8.038</p>
+                      <p id="seccion-estudios-tecnicatura-titulo" class="experiencia-titulo"> Tecnicatura universitaria en desarrollo de software </p>
+                      <p id="seccion-estudios-tecnicatura-descripcion"> El ciclo básico del grado de ingeniería en informatica me dio la posibilidad de tener una base sólida en matemática, lógica, análisis de problemas y me dio los fundamentos de los sistemas discretos, y de las tecnologías de la información. </p>
+                      <p id="seccion-estudios-tecnicatura-promedio">Promedio: 8.038</p>
                       <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">análisis de sistemas </span>
-                        <span class="badge text-bg-primary">implementación</span>
+                        <span id="badge-analisis-sistemas" class="badge text-bg-primary">análisis de sistemas </span>
+                        <span id="badge-implementacion" class="badge text-bg-primary">implementación</span>
                         <span class="badge text-bg-primary">testing</span>
-                        <span class="badge text-bg-primary">Analisis Matemático</span>
-                        <span class="badge text-bg-primary">Estadistica</span>
-                        <span class="badge text-bg-primary">Programacion</span>
+                        <span id="badge-analisis-matematico" class="badge text-bg-primary">Analisis Matemático</span>
+                        <span id="badge-estadistica" class="badge text-bg-primary">Estadistica</span>
+                        <span id="badge-programacion" class="badge text-bg-primary">Programacion</span>
                       </div>
                     </div>      
                     
                     <!-- Ing en informatica -->
                     <div class="columna col-12 col-md-6">
                         <img class="align-items-center img-fluid rounded-circle experiencia-imagen" src="img/unlam.png" alt="Unlam universidad nacional de la matanza">
-                        <p class="experiencia-titulo"> Ingeniería en informatica </p>
-                        <p> La carrera me dio la posibilidad de tener una vision balanceada entre la teoría y la práctica. 
+                        <p id="seccion-estudios-ingenieria-titulo" class="experiencia-titulo"> Ingeniería en informatica </p>
+                        <p id="seccion-estudios-ingenieria-descripcion"> La carrera me dio la posibilidad de tener una vision balanceada entre la teoría y la práctica. 
                           Adicionalmente tambien obtuve mucho conocimiento y la posibilidad de poner en práctica mis habilidades blandas, trabajo en equipo, liderazgo, comunicación, entre otros.</p>
-                        <p>Promedio actual: 8.077</p>
+                        <p id="seccion-estudios-ingenieria-promedio">Promedio actual: 8.077</p>
                         <div class="badges-contenedor">
-                          <span class="badge text-bg-primary">ingeniería de software </span>
-                          <span class="badge text-bg-primary">análisis de sistemas </span>
-                          <span class="badge text-bg-primary">diseño</span>
-                          <span class="badge text-bg-primary">implementación</span>
+                          <span id="badge-ingenieria-software" class="badge text-bg-primary">ingeniería de software </span>
+                          <span id="badge-diseno" class="badge text-bg-primary">diseño</span>
                           <span class="badge text-bg-primary">testing</span>
                           <span class="badge text-bg-primary">networking</span>
                         </div>
@@ -296,22 +301,22 @@
                     <!-- Ingles -->
                     <div class="columna col-12 col-md-6">
                       <img id="img-ingles" class="hero-inferior-imagen img-fluid experiencia-imagen" src="img/libros.jpg" alt="Ingles">
-                      <p class="experiencia-titulo"> Inglés </p>
-                      <p> Durante 7 años cursé en un instituto especializado en lengua inglesa, finalicé mis estudios en el año 2017</p>
+                      <p id="seccion-estudios-ingles-titulo" class="experiencia-titulo"> Inglés </p>
+                      <p id="seccion-estudios-ingles-descripcion"> Durante 7 años cursé en un instituto especializado en lengua inglesa, finalicé mis estudios en el año 2017</p>
                       <br> <br> <br> <br> <br> 
 
                       <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">escritura</span>
-                        <span class="badge text-bg-primary">lectura</span>
-                        <span class="badge text-bg-primary">convesación fluida</span>
+                        <span id="badge-escritura" class="badge text-bg-primary">escritura</span>
+                        <span id="badge-lectura" class="badge text-bg-primary">lectura</span>
+                        <span id="badge-conversacion" class="badge text-bg-primary">convesación fluida</span>
                       </div>
                     </div>      
                     
                     <!-- MASTER-PHP -->
                     <div class="columna col-12 col-md-6">
                         <img id="img-ingles" class="hero-inferior-imagen img-fluid experiencia-imagen" src="img/master_php.png" alt="Ingles">
-                        <p class="experiencia-titulo"> Master en PHP, SQL, POO, MVC, Laravel, Symfony, WordPress+ </p>
-                        <p> Durante el master de más de 56hs de cursada logre obtener conocimientos profundos sobre la programación web, tanto de front-end como en back-end. Desde PHP 8, mySQL, frameworks y Habilidades full-stack. </p>
+                        <p id="seccion-estudios-master_php-titulo" class="experiencia-titulo"> Master en PHP, SQL, POO, MVC, Laravel, Symfony, WordPress+ </p>
+                        <p id="seccion-estudios-master_php-descripcion"> Durante el master de más de 56hs de cursada logre obtener conocimientos profundos sobre la programación web, tanto de front-end como en back-end. Desde PHP 8, mySQL, frameworks y Habilidades full-stack. </p>
   
                         <br> <br> 
 
@@ -319,7 +324,7 @@
                           <span class="badge text-bg-primary">PHP</span>
                           <span class="badge text-bg-primary">mySQL</span>
                           <span class="badge text-bg-primary">full stack</span>
-                          <span class="badge text-bg-primary">Librerias</span>
+                          <span id="badge-librerias" class="badge text-bg-primary">Librerias</span>
                           <span class="badge text-bg-primary">MVC</span>
                         </div>
                       </div>
@@ -332,9 +337,9 @@
 
         <section id="contacto" class="seccion-negra" style="padding-top: 2rem">
 
-            <h2> Contacto </h2>
+            <h2 id="seccion-contacto-titulo"> Contacto </h2>
             <br> <br>
-            <h4> Contáctame para cualquier tipo de proyecto, tanto de corto como a largo plazo. O cualquier pregunta que quieras hacerme no dudes en enviarmela. </h4>
+            <h4 id="seccion-contacto-subtitulo"> Contáctame para cualquier tipo de proyecto, tanto de corto como a largo plazo. O cualquier pregunta que quieras hacerme no dudes en enviarmela. </h4>
             
             <div class="row container contacto">
                     
@@ -387,11 +392,7 @@
                 </div>
 
                 <div class="contacto-iconos col-4">
-                    
-                    <!-- <a href=""> -->
                     <i style="color: #3366CC" id="icono-correo" class="bi bi-envelope"></i>
-                    <!-- </a>  -->
-                    
                 </div>
                             
             </div>

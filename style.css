@@ -10,6 +10,11 @@
 	justify-content: space-between; /*separa el logo del <ul> (no el contenido del ul, sino el bloque) en index.html*/
 }
 
+
+#selector-idioma-li {
+	padding-right: 2rem;
+}
+
 /* Estilos generales */
 
 section {
